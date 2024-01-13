@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Neue-Montreal-Reg;
+    src: url(fonts/NeueMontreal-Regular.otf);
+}
+@font-face {
+    font-family: Neue-Montreal-Med;
+    src: url(fonts/NeueMontreal-Medium.otf);
+}
+@font-face {
+    font-family: Neue-Montreal-Bold;
+    src: url(fonts/NeueMontreal-Bold.otf);
+}
+
+html, body {
+    background-color: rgb(3, 1, 20);
+}
+
+.first .head {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    transition: ease-in 0.8s;
+}
+
+.first .head .logo {
+    font-size: 3rem;
+}
+
+.first .head .logo a {
+    color: #9a9a9a;
+}
+
+.first .head .logo .nav-bar .buttons-list {
+    list-style: none;
+}
+
+.first .head .nav-bar .buttons-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.first .head .nav-bar .buttons-list li {
+    width: max-content;
+    padding-top: 10px;
+    position: relative;
+}
+
+.first .head .nav-bar .buttons-list a {
+    text-decoration: none;
+    color: #9A9A9A;
+    font-size: 1.2rem;
+    font-family: 'Neue-Montreal-Med', 'sans-serif';
+}
+
+.first .head .nav-bar .buttons-list a:hover {
+    color:white;
+    border-bottom: 3px solid white;
+    transition: ease-in-out 0.2s;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+.submenu ul {
+    list-style: none;
+    display: block;
+}
+
+#tool:hover .submenu {
+    display: block;
+    position: absolute;
+    background-color:transparent;
+    width: 150px;
+    height: 100px;
+    transition: ease-in 0.8s;
+}
+
+main .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    top: 50%;
+    transform: translateY(20%);
+}
+
+main .content .graph-table {
+    width: 60%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-top: 10px;
+    border: 2px solid rgb(1, 76, 1);
+    border-radius: 10px;
+    background: linear-gradient(80deg,rgb(3, 50, 59) 0%, rgb(8, 8, 8) 0%, rgb(5, 27, 33) 70%, rgb(4, 35, 29) 80%);
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    gap: 35%;
+}
+
+main .content .graph-table .World-View {
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    padding-top: 20px;
+}
+
+main .content .graph-table .World-View h3 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main .content .graph-table .World-View p {
+    font-size: 13px;
+    font-weight: lighter;
+    padding-left: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main .content .graph-table .search-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+main .content .graph-table .search-bar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+main .content .graph-table .search-bar ul li {
+    list-style: none;
+}
+
+main .content .graph-table .search-bar ul li button {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: transparent;
+    color:white;
+    position: relative;
+    overflow: hidden;
+}
+
+main .content .graph-table .search-bar ul li .sub-menu {
+    display: none;
+    position: absolute;
+}
+
+main .content .graph-table .search-bar ul li .sub-menu ul {
+    list-style: none;
+    display: block;
+}
+
+main .content .graph-table .search-bar ul li a {
+    text-decoration: none;
+}
+
+main .content .graph-table .search-bar ul li a i {
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 8px;
+}
+
+main .content .graph-table .search-bar ul li a i:hover {
+    color: rgb(136, 200, 233);
+}
+
+main .content .graph-table .search-bar ul li button i {
+    padding-left: 5px;
+    transition: all 0.3s ease;
+}
+
+main .content .right-section {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+main .content .right-section .detail {
+    display: flex;
+    border: 2px solid rgb(1, 76, 1);
+    height: 80px;
+    border-radius: 10px;
+    background-color: rgba(23, 44, 29, 0.474);
+    background: linear-gradient(80deg,rgb(3, 50, 59) 0%, rgb(8, 8, 8) 0%, rgb(5, 27, 33) 70%, rgb(4, 35, 29) 80%);
+    margin-right: 5%;
+    justify-content: right;
+}
+
+main .content .right-section .detail a {
+    text-decoration: none;
+}
+
+main .content .right-section .detail a button {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: transparent;
+    color:white;
+    position: relative;
+    overflow: hidden;
+}
+
+main .content .right-section .ranking-table {
+    display: flex;
+    border: 2px solid rgb(1, 76, 1);
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgba(23, 44, 29, 0.474);
+    background: linear-gradient(80deg,rgb(3, 50, 59) 0%, rgb(8, 8, 8) 0%, rgb(5, 27, 33) 70%, rgb(4, 35, 29) 80%);
+    margin-right: 5%;
+    justify-content: right;
+}
+
+main .content .right-section .ranking-table .sort-by {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+}
+
+main .content .right-section .ranking-table .sort-by a {
+    text-decoration: none;
+} 
+
+main .content .right-section .ranking-table .sort-by a button {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: transparent;
+    color:white;
+    position: relative;
+    overflow: hidden;
+}
+
+main .content .right-section .ranking-table .sort-by a ul {
+    display: none;
+}
+
+main .content .right-section .ranking-table .sort-by a ul li {
+    list-style: none;
+}
+
+main .content .right-section .ranking-table .sort-by a i {
+    padding-left: 5px;
+}
+
